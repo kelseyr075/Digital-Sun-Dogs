@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<!--
+    Name: Kelsey Riha
+    Date Created: 03/31/2019 
+    Most recent revision: 04/01/2019
+-->
+<html lang="en"> 
+    <head> 
+        <title>Contact Us</title>	
+    </head> 
+    
+    <body>
+        <header>
+            <h1>Om Nom Nom Sandwiches</h1>
+        </header>
+        <nav>
+		   <hr />
+		   <!-- Navigation bar will go here -->
+		   <p>
+		   <a href="index.html">Home</a>
+		   <a href="menu.html">Menu</a>
+		   <a href="contact.html">Contact Us</a>
+		   </p>
+        </nav>
+		<hr />
+		<form action="fakePage.html" method="POST">
+		   <!-- Name text and label -->
+		   <label for="name">Name:</label>
+		   <input type="text" id="name" name="name" /><br />
+		   <!-- Email text and label -->
+		   <label for="email">Email:</label>
+		   <input type="text" id="email" name="email" /><br />
+		   <!-- Phone Number text and label -->
+		    <label for="phone">Phone:</label>
+		   <input type="text" id="phone" name="phone" /><br />
+		   <!-- dropdown menu -->
+		   <label for="inquiry">Reason for Inquiry:</label>
+		   <select id="inquiry" name="inquiry">
+		   <option value="catering" selected>Catering</option>
+		   <option value="private-party">Private Party</option>
+		   <option value="feedback">Feedback</option>
+		   <option value="other">Other</option>
+		   </select>
+		   <br />
+		<!-- textarea -->
+		<label for="info">Additional Information</label>
+		<textarea id="info" name="info"></textarea><br />
+		<!-- radio buttons -->
+		<label for="been-to-restaurant">Have you been to the restaurant?</label>
+		<input type="radio" id="been-to-restaurant" name="been-to-restaurant" 
+		value="NO" checked />No
+		<input type="radio" id="been-to-restaurant" name="been-to-restaurant" 
+		value="YES" />Yes<br />
+		<!-- check box -->
+		Best days to contact you:
+		<input type="checkbox" id="monday" name="contact-time" value="monday" />
+		<label for="monday">M</label>
+		<input type="checkbox" id="tuesday" name="contact-time" value="tuesday" />
+	    <label for="tuesday">T</label>
+		<input type="checkbox" id="wednesday" name="contact-time" value="wednesday />
+		<label for="wednesday">W</label>
+		<input type="checkbox" id="thursday" name="contact-time" value="thursday" />
+		<label for="thursday">Th</label>
+		<input type="checkbox" id="friday" name="contact-time" value="friday" />
+		<label for="friday">F</label>
+		<br />
+		<!-- submit button -->
+		<input type="submit" name="submit" value="Send Request" />
+		</form>
+        <footer>
+           <hr />
+		   <p>3224 Big Appetite Ln #1, Minneapolis, MN, 55401</p>
+		   <p>(651) 867-5309</p>
+        </footer>
+    </body> 
+</html
