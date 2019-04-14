@@ -1,0 +1,60 @@
+/*
+Creator: Kelsey Riha
+Date created: 04/14/2019
+Date last modified:
+*/
+body {
+	background-color: #f4faff;
+	font-family: arial, helvetica, sans-serif;
+	color: #0d1f2d;
+	max-width: 900px;
+	margin: 0 auto;
+}
+header, footer {
+	background-color: #8789c0;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+h1 {
+	font-size: 2.5em;
+}
+nav {
+	border-top: 3px dashed #546a7b;
+	border-bottom: 3px dashed #546a7b;
+	margin-top: 4px;
+}
+.clear-float {
+    clear:both;
+}
+article img {
+	float: left;
+}
+.right-content {
+	float: left;
+}
+article {
+	margin-bottom: 16px;
+}
+nav a {
+	background-color: #000151;
+	color: #f2eded;
+	padding: 8px;
+	border: thin solid #0a014f;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: 20px;
+	width: 100px;
+	float: left;
+}
+nav a:visited {
+	color: #cd9fcc;
+}
+nav a:hover {
+	background-color: #f2eded;
+	color: #000151;
+}
+nav a:active {
+	font-weight: bold;
+}
