@@ -1,0 +1,36 @@
+/*
+Creator: Kelsey Riha
+Date created: 04/18/2019
+Date last modified: 04/19/2019
+*/
+
+header, footer {
+	background-color: #ef281a;
+	color: #fff0ea;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-family: Tahoma, Arial;
+}
+header {
+		padding-top: 15px;
+	    padding-bottom: 15px;
+}
+footer {
+	font-size: small;
+	border: solid gray 1px;
+    padding-top: 5px;
+	padding-bottom: 5px;
+}
+body {
+	background-color: #fff0ea;
+}
+hr {
+    border: 1px solid light-gray;
+}
+nav {
+	padding-left: 15px;
+	font-family: Tahoma, Arial;
+	border-top: thin solid gray;
+	border-bottom: thin solid gray;
+}

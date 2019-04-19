@@ -2,11 +2,34 @@
 <!--
     Name: Kelsey Riha
     Date Created: 03/31/2019 
-    Most recent revision: 04/01/2019
+    Most recent revision: 04/19/2019
 -->
 <html lang="en"> 
     <head> 
-        <title>Contact Us</title>	
+		 <meta charset="UTF-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+		   <title>Contact Us</title>	
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<style>
+		form {
+		back-ground color: #fff0ea;
+		font-family: Tahoma, Arial;
+		}
+		nav .btn {
+		    background-color: #ffbc75;
+            color: #ef3c2f;
+		 }
+		 a:visited {
+		    color: darkorchid;
+		 }
+		 a:hover {
+		    font-weight: bold;
+		 }
+		 .required {
+		    font-weight: bold;
+		 }
+		</style>
     </head> 
     
     <body>
@@ -14,25 +37,23 @@
             <h1>Om Nom Nom Sandwiches</h1>
         </header>
         <nav>
-		   <hr />
+		   <div class="btn-group role="group" aria-label="Navigation Toolbar">
 		   <!-- Navigation bar will go here -->
-		   <p>
-		   <a href="index.html">Home</a>
-		   <a href="menu.html">Menu</a>
-		   <a href="contact.html">Contact Us</a>
-		   </p>
+		      <a class="btn" href="index.html">Home</a>
+		      <a class="btn" href="menu.html">Menu</a>
+		      <a class="btn" href="contact.html">Contact Us</a>
+		   </div>
         </nav>
-		<hr />
 		<form action="fakePage.html" method="POST">
 		   <!-- Name text and label -->
-		   <label for="name">Name:</label>
-		   <input type="text" id="name" name="name" /><br />
+		   <label for="name" class="required">Name:</label>
+		   <input type="text" id="name" name="name" required /><br />
 		   <!-- Email text and label -->
-		   <label for="email">Email:</label>
-		   <input type="text" id="email" name="email" /><br />
+		   <label for="email" class="required">Email:</label>
+		   <input type="text" id="email" name="email" required /><br />
 		   <!-- Phone Number text and label -->
-		    <label for="phone">Phone:</label>
-		   <input type="text" id="phone" name="phone" /><br />
+		    <label for="phone" class="required">Phone:</label>
+		   <input type="text" id="phone" name="phone" required /><br />
 		   <!-- dropdown menu -->
 		   <label for="inquiry">Reason for Inquiry:</label>
 		   <select id="inquiry" name="inquiry">
@@ -46,11 +67,11 @@
 		<label for="info">Additional Information</label>
 		<textarea id="info" name="info"></textarea><br />
 		<!-- radio buttons -->
-		<label for="been-to-restaurant">Have you been to the restaurant?</label>
+		<label for="been-to-restaurant" class="required">Have you been to the restaurant?</label>
 		<input type="radio" id="been-to-restaurant" name="been-to-restaurant" 
-		value="NO" checked />No
+		value="NO" />No
 		<input type="radio" id="been-to-restaurant" name="been-to-restaurant" 
-		value="YES" />Yes<br />
+		value="YES" checked />Yes<br />
 		<!-- check box -->
 		Best days to contact you:
 		<input type="checkbox" id="monday" name="contact-time" value="monday" />
@@ -68,9 +89,17 @@
 		<input type="submit" name="submit" value="Send Request" />
 		</form>
         <footer>
-           <hr />
-		   <p>3224 Big Appetite Ln #1, Minneapolis, MN, 55401</p>
+           <p>3224 Big Appetite Ln #1</p>
+		   <p>Minneapolis, MN, 55401</p>
 		   <p>(651) 867-5309</p>
-        </footer>
+		   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+	   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+	   crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+	   integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+	   crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+	   integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+	   crossorigin="anonymous"></script> 
     </body> 
 </html

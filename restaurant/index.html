@@ -2,46 +2,83 @@
 <!--
     Name: Kelsey Riha 
     Date Created: 03/31/2019 
-    Most recent revision: 04/01/2019
+    Most recent revision: 04/19/2019
 -->
 <html lang="en">
    <head>
-      <title>Home Page</title>
+	  <meta charset="UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+	   <title>Home Page</title>
+	   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	  <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+	  <style>
+	     .description {
+		 padding-left: 15%;
+		 padding-right: 15%;
+		 }
+		 h2 {
+		 text-align: center;
+		 }
+		 h1, h2, p {
+		 font-family: Tahoma, Arial;
+		 }
+		 nav .btn {
+		    background-color: #ffbc75;
+            color: #ef3c2f;
+		 }
+		 a:visited {
+		    color: darkorchid;
+		 }
+		 a:hover {
+		    font-weight: bold;
+		 }
+	  </style>
    </head>       
    <body>
       <header>
          <h1>Om Nom Nom Sandwiches</h1>
       </header>
       <nav>
-	     <hr />
+	     <div class="btn-group role="group" aria-label="Navigation Toolbar">
 		 <!-- navigation bar -->
-		 <p>
-		 <a href="">Home</a>
-		 <a href="menu.html">Menu</a>
-		 <a href="contact.html">Contact Us</a>
-		 </p>
+		 
+		    <a class="btn" href="">Home</a>
+		    <a class="btn" href="menu.html">Menu</a>
+		    <a class="btn" href="contact.html">Contact Us</a>
+		   
+		 </div>
       </nav>
 	  <section>
-	  <hr />
 	  <article>
 	  <h2>Restaurant Description</h2>
 	  <p>
-	  <img src="images/sandwich-with-sweet-potato-fries-400.jpg" alt="sandwich
+	  <div style="text-align: center;">
+	  <img class="img-fluid" src="images/sandwich-with-sweet-potato-fries-400.jpg" alt="sandwich
 	  triangles on a plate with sweet potato fries" />
+	  </div>
 	  </p>
-	  <p></p>Welcome to "Om Nom Nom Sandwiches," where we have delicious solutions
+	  <p class="description">Welcome to "Om Nom Nom Sandwiches," where we have delicious solutions
 	  for all of your nom-ing needs. Come enjoy a sandwich and a salad out on our 
-	  3-season patio and take in a picturesque view of the mighty Mississipi River.
-	  Too cold for the for outdoor noms? Come on in and eat some fries while you 
+	  3-season patio and take in a picturesque view of the mighty Mississipi River. </p>
+	  <p class="description">Too cold for the for outdoor noms? Come on in and eat some fries while you 
 	  watch your favorite anime on one of several flat screen tvs or cozy up with 
-	  some friends and a board game from our board game wall.
+	  some friends and a board game from our board game wall.</p>
 	  </article>
 	  </section>
         <footer>
-           <hr />
-		   <p>3224 Big Appetite Ln #1, Minneapolis, MN, 55401</p>
+		   <p>3224 Big Appetite Ln #1</p>
+		   <p>Minneapolis, MN, 55401</p>
 		   <p>(651) 867-5309</p>
         </footer>
+		 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+	   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+	   crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+	   integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+	   crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+	   integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+	   crossorigin="anonymous"></script> 
     </body> 
 </html
 

@@ -2,58 +2,135 @@
 <!--
     Name: Kelsey Riha
     Date Created: 03/31/2019 
-    Most recent revision: 04/01/2019
+    Most recent revision: 04/19/2019
 -->
 <html lang="en"> 
     <head> 
-        <title>Menu</title>	
+		 <meta charset="UTF-8" />
+		  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+		    <title>Menu</title>	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<style>
+		table.menu tr, table.menu td {
+		background-color: #fff0ea;
+		font-family: Tahoma; Arial;
+		}
+		table.center {
+		margin-left: auto;
+		margin-right: auto;
+		}
+		table {
+		   margin-bottom: 15px;
+		}
+		.beverages table {
+		border: solid thin gray;
+		}
+		.beverages th {
+		border: solid thin gray;
+		}
+		.beverages tr {
+		border: solid thin gray;
+		}
+		.beverages td {
+		border: solid thin gray;
+		}		
+		td {
+		padding-left: 15px;
+		padding-right: 15px;
+		}
+		tbody tr:nth-child(even) {
+		   background-color: #fff0ea;
+		   
+		}
+		tbody tr:nth-child(odd) {
+		   background-color: #ffbc75;
+		   
+		}
+		nav .btn {
+		    background-color: #ffbc75;
+            color: #ef3c2f;
+		 }
+		a:visited {
+		    color: darkorchid;
+		 }
+		a:hover {
+		    font-weight: bold;
+		 }
+		</style>
     </head> 
     <body>
         <header>
             <h1>Om Nom Nom Sandwiches</h1>
         </header>
         <nav>
-		   <hr />
 		   <!-- Navigation bar -->
-		   <p>
-		   <a href="index.html">Home</a>
-		   <a href="">Menu</a>
-		   <a href="contact.html">Contact Us</a>
-		   </p>
+		   <div class="btn-group role="group" aria-label="Navigation Toolbar">
+		      <a class="btn" href="index.html">Home</a>
+		      <a class="btn" href="">Menu</a>
+		      <a class="btn" href="contact.html">Contact Us</a>
+		   </div>
         </nav>
-        <hr />
-		<table>
+		<table class="center menu">
 		   <tr>
-		   <td><strong>Burger and Fries</strong><br />An American Classic!<br />
+		   <td valign="top"><strong><span style="font-size: large;">Burger and Fries</span></strong><br />An American Classic!<br />
 		   Your choice - with or without cheese<br />Pickle, onion, tomato, 
 		   and lettuce<br />Served with our famous thick cut french fries 
 		   <br />$7.95</td>
-		   <td><strong>Hot Dog and Chips</strong><br />A Summer Classic!<br />Your 
+		   <td valign="top"><strong><span style="font-size: large;">Hot Dog and Chips</span></strong><br />A Summer Classic!<br />Your 
 		   choice - white or wheat bun<br />Relish, mustard, and ketchup<br />
 		   Served with our house-made chips<br />$7.95</td>
-		   <td><strong>Italian Sausage and Peppers</strong><br />An All-Time 
+		   <td valign="top"><strong><span style="font-size: large;">Italian Sausage and Peppers</span></strong><br />An All-Time 
 		   favorite!<br />Your choice - mild or spicy Cole Slaw<br />Served 
 		   with garlic mashers<br />$10.95</td>
 		   </tr>
 		   <tr>
-		   <td><strong>Tenderloin Sandwich and Chips</strong><br />Really Hits 
+		   <td valign="top"><strong><span style="font-size: large;">Tenderloin Sandwich and Chips</span></strong><br />Really Hits 
 		   the Spot!<br />Plain or Sesame Seed Bun<br />Pickle, onion, tomato, 
 		   and lettuce<br />Served with our house-made chips<br />$8.95</td>
-		   <td><strong>House Salad</strong><br />On the Lighter Side<br />
+		   <td valign="top"><strong><span style="font-size: large;">House Salad</span></strong><br />On the Lighter Side<br />
 		   Your choice - with or without cheese<br />Iceberg lettuce, tomatoes, 
 		   peppers<br />Thousand Island or Ranch Dressing<br />Served with a 
 		   dinner roll<br />$6.95</td>
-		   <td><strong>Brisket Sandwich and Fries</strong><br />A Taste of 
-		   Texas!<br />Smoked Brisket on thick-cut Texas Toast<br />Cole 
+		   <td valign="top"><strong><span style="font-size: large;">Brisket Sandwich and Fries</strong><br />A Taste of 
+		   Texas!</span><br />Smoked Brisket on thick-cut Texas Toast<br />Cole 
 		   Slaw<br />Served with our famouse thick-cut french fries<br />
 		   $7.95</td>
 		   </tr>
 		</table>
+		<table class="center beverages">
+		   <tbody>
+		      <tr>
+		         <td><strong><span style="font-size: large;">Beverages</span></strong></td>
+		      </tr>
+		      <tr>
+		         <td>Root Beer</td>
+		      </tr>
+		      <tr>
+		         <td>Bottled Water</td>
+		      </tr>
+		      <tr>
+		         <td>Lemonade</td>
+		      </tr>
+		      <tr>
+		         <td>Iced Tea</td>
+		      </tr>
+		   </tbody>
+		</table>
 
         <footer>
-           <hr />
-		   <p>3224 Big Appetite Ln #1, Minneapolis, MN, 55401</p>
+           <p>3224 Big Appetite Ln #1</p>
+		   <p>Minneapolis, MN, 55401</p>
 		   <p>(651) 867-5309</p>
         </footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+	   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+	   crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+	   integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+	   crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+	   integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+	   crossorigin="anonymous"></script> 
     </body> 
 </html
