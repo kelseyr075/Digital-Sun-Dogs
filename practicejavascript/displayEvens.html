@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+	   <title>Sample</title>
+	   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	   <script type="text/javascript" src="displayEvens.js"></script>
+	   <style>
+	      form {
+		   padding-left: 25px;
+		  }
+		  label {
+		     display: inline-block;
+			 width: 140px;
+			 text-align: right;
+		  }
+		  button {
+		  margin-left: 100px;
+		  }
+		  header {
+		  margin-left: 50px;
+		  margin-bottom: 25px;
+		  }
+	   </style>
+</head>
+<body>
+   <header><h3>Sample</h3></header>
+   <form name="displayEvens" onsubmit="return displayEvens();">
+      <label for="startNumber">Starting Number</label>
+      <input type="number" name="startNumber" id="startingNumber" />
+	  <br />
+	  <label for="endNumber">Ending Number</label>
+	  <input type="number" name="endNumber" id="endingNumber" />
+	  <br />
+	  <label for="step">Step</label>
+	  <input type="number" name"step" id="numberStep" />
+	  <br />
+	  <button type="submit" id="displayEvens">Display Evens</button>
+   </form>
+   <div id="textDisplay" style="display:none;">
+      Here are the even numbers between <span id="firstNumber"></span>and <span id="secondNumber"></span>by <span id="stepNumber"></span>'s:
+   </div>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+	   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+	   crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+	   integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+	   crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+	   integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+	   crossorigin="anonymous">
+	</script> 
+</body>
+</html>

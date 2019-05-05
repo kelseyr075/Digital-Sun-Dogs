@@ -12,6 +12,9 @@ header, footer {
 	text-align: center;
 	font-family: Tahoma, Arial;
 }
+header.jumbotron {
+	margin-bottom: 0px;
+}
 header {
 		padding-top: 15px;
 	    padding-bottom: 15px;
@@ -24,6 +27,12 @@ footer {
 }
 body {
 	background-color: #fff0ea;
+	width: 100%;
+	height: 100%;
+}
+html {
+	width: 100%;
+	height: 100%;
 }
 hr {
     border: 1px solid light-gray;

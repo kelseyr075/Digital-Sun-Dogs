@@ -2,7 +2,7 @@
 <!--
     Name: Kelsey Riha
     Date Created: 03/31/2019 
-    Most recent revision: 04/19/2019
+    Most recent revision: 05/04/2019
 -->
 <html lang="en"> 
     <head> 
@@ -46,7 +46,12 @@
 		tbody tr:nth-child(odd) {
 		   background-color: #ffbc75;
 		   
+		}@media(max-width: 400px) {
+		table, thead, tbody, th, td, tr {
+		display: block;
 		}
+		}
+		
 		nav .btn {
 		    background-color: #ffbc75;
             color: #ef3c2f;
@@ -57,20 +62,31 @@
 		a:hover {
 		    font-weight: bold;
 		 }
+		  div {
+		 width: 100%;
+		 margin: 0px;
+		 }
+		 html, body {
+		 width: 100%;
+		 height: 100%;
+		 }
 		</style>
     </head> 
-    <body>
-        <header>
-            <h1>Om Nom Nom Sandwiches</h1>
-        </header>
+    <body style="margin-left: 25px; margin-right: 25px;">
+	   <div class="d-flex">
+	   <div class="row">
+	   <div class="col-lg">
+        <header class="jumbotron" style="background-color: #ef281a;">
+         <h1>Om Nom Nom Sandwiches</h1>
+		 <h3>Coming Soon: New location at 1234 Eat Street, St. Paul, MN</h3>
+      </header>
         <nav>
-		   <!-- Navigation bar -->
-		   <div class="btn-group role="group" aria-label="Navigation Toolbar">
-		      <a class="btn" href="index.html">Home</a>
-		      <a class="btn" href="">Menu</a>
-		      <a class="btn" href="contact.html">Contact Us</a>
-		   </div>
+		      <a class="btn badge-pill" href="index.html"><img src="https://useiconic.com/open-iconic/svg/home.svg" width="20" height="20" /></a>
+		      <a class="btn badge-pill" href="">Menu</a>
+		      <a class="btn badge-pill" href="contact.html">Contact Us</a>
         </nav>
+		</div>
+		<div class="table-responsive-sm-md-lg-xl">
 		<table class="center menu">
 		   <tr>
 		   <td valign="top"><strong><span style="font-size: large;">Burger and Fries</span></strong><br />An American Classic!<br />
@@ -117,12 +133,17 @@
 		      </tr>
 		   </tbody>
 		</table>
-
-        <footer>
+        </div><!-- table responsive -->
+		<div style="width: 100%;">
+        <footer style="margin-left: 15px; margin-right: 10px;">
            <p>3224 Big Appetite Ln #1</p>
 		   <p>Minneapolis, MN, 55401</p>
 		   <p>(651) 867-5309</p>
         </footer>
+		</div>
+		</div><!-- formatting -->
+	   </div><!-- row -->  
+	   </div><!-- container -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
 	   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
 	   crossorigin="anonymous"></script>
@@ -132,5 +153,6 @@
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
 	   integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
 	   crossorigin="anonymous"></script> 
+	   <noscript>JavaScript is not enabled in your browser. For optimal viewing, enable JavaScript.</noscript> 
     </body> 
 </html
